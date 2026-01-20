@@ -202,3 +202,68 @@ nav ul a{
     color: #FFFFFF;
     line-height: 1.25rem;
 }
+
+
+.choose{
+    background-color: #230E3D;
+    padding: 120px 200px;
+    justify-items: center;
+}
+
+.choose-container{
+    margin-bottom: 40px;
+}
+
+.choose-container h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card-container{
+    max-width: 1200px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.choose-card{
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    gap: 16px;
+}
+
+.big-card{
+    grid-column: 2 span;
+    grid-row: 1 span;
+}
+
+.medium-card{
+    grid-column: 1 span;
+    grid-row: 2 span;
+}
+
+.choose-card span{
+    background: linear-gradient(to top right, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    color: transparent;
+    background-clip: text;
+    height: 60px;
+    width: 60px;
+}
+
+.choose-card .card-header{
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700px;
+}
+
+.choose-card .card-info{
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
+}
