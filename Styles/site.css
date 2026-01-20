@@ -65,6 +65,10 @@ nav ul a{
     cursor: pointer;
 }
 
+.hamburger {
+        display: none;
+    }
+
 .banner{
     margin: 0 auto;
     border-top: 1px solid rgb(64, 37, 102);
@@ -197,6 +201,7 @@ nav ul a{
 
 .podcast p{
     line-height: 1.25rem;
+    max-width: 800px;
 }
 
 .stats{
@@ -464,4 +469,197 @@ footer h1 span{
 footer p {
     color: rgba(255, 255, 255, 0.6);
     line-height: 24px;
+}
+
+
+/* ===== MOBILE RESPONSIVE (up to 576px) ===== */
+@media screen and (max-width: 576px) {
+    
+    
+    .about, .choose, .featured, .host {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    
+    nav {
+        
+        padding: 0px 20px 16px 20px;
+        flex-wrap: wrap;
+        height: 60px;
+    }
+    
+    nav h2 {
+        font-size: 1.8rem;
+    }
+    
+    nav ul, .btn-primary {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+    }
+
+   
+    
+    .banner-image {
+        height: 400px;
+        width: 100%;
+    }
+
+    .banner-image .banner-bg {
+        height: 400px; 
+        width: 100%;
+        object-fit: cover; /* Ensures image doesn't stretch weirdly */
+    }
+    
+    .secondary-images {
+        margin-top: -400px; 
+        height: 400px;
+        position: relative;
+    }
+    
+    
+    .banner-circle {
+        width: 200px;
+        height: 200px;
+        margin-top: 50px; /
+    }
+    
+    .microphone {
+        width: 75px;
+        top: 90px; 
+    }
+    
+    .badge {
+        top: 60px; 
+        left: 60%;
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    
+    
+    .banner-content {
+        margin-top: 20px; 
+        padding: 0 20px;
+    }
+
+    .banner-content h1 {
+        font-size: 2.2rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+    
+    .banner-content p {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1rem;
+    }
+    
+    .button-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .button-group button {
+        white-space: nowrap;
+        padding: 12px 20px;
+    }
+    
+    
+    .about {
+        margin-top: 80px;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .podcast h2{
+        font-size: 2rem;
+    }
+    
+    .stats {
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-top: 40px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .stats-card {
+        width: 45%; 
+        text-align: center;
+    }
+    
+    .stats-card h2 {
+        font-size: 2rem;
+    }
+    
+   
+    .choose { padding: 60px 20px; }
+    
+    .card-container, .feature-card-container {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .choose-container h2{
+        font-size: 2rem;
+    }
+    
+    
+    .big-card, .medium-card {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .featured{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .featured h2{
+        font-size: 2rem;
+    }
+
+    .host h2{
+        font-size: 2rem;
+    }
+
+    .host-container {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .host-container img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto; 
+    }
+
+    .host-links img {
+        width: 25px; 
+        height: 25px;
+        margin: 0 auto;
+    }
+    
+    .host-links {
+        justify-content: center;
+    }
+    
+    footer {
+        background-image: url(/assets/footer.png);
+        padding: 40px 20px;
+    }
+    
+    .social-links {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
