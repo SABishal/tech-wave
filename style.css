@@ -434,7 +434,7 @@ nav ul a{
 /* Footer Section Styles */
 
 footer{
-    background: url(/assets/footer-bg.png) no-repeat center center;
+    background-image: url(assets/footer-bg.png) no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -659,7 +659,7 @@ footer p {
     }
     
     footer {
-        background-image: url(/assets/footer.png);
+        background-image: url(assets/footer.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
