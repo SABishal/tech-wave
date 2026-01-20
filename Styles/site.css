@@ -203,7 +203,7 @@ nav ul a{
     line-height: 1.25rem;
 }
 
-
+/* Choose TechWave Styles */
 .choose{
     background-color: #230E3D;
     padding: 120px 200px;
@@ -266,4 +266,136 @@ nav ul a{
 .choose-card .card-info{
     color: rgba(255, 255, 255, 0.6);
     line-height: 24px;
+}
+
+
+/* Featured Section Styles */
+.featured{
+    padding: 120px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.feature-card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    gap: 30px;
+}
+
+.feature-card{
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.feature-card iframe {
+    width: 380px;
+    height: 214px;
+    border-radius: 20px;
+    border: none;
+}
+
+.card-data {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 12px;
+}
+
+.card-data .card-header{
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700px;
+}
+
+.card-data .card-info{
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
+}
+
+.card-data .time{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #00FF88;
+}
+
+
+/* Host Section Styles */
+.host{
+    padding: 0px 200px 120px 200px;
+    justify-items: center;
+}
+
+.host h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.host-container{
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.host-card{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.host-title{
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.host-info{
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
+}
+
+.host-links{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #533c72;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container img{
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+        border: none;
 }
