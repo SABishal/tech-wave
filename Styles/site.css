@@ -475,7 +475,6 @@ footer p {
 /* ===== MOBILE RESPONSIVE (up to 576px) ===== */
 @media screen and (max-width: 576px) {
     
-    
     .about, .choose, .featured, .host {
         padding-left: 20px;
         padding-right: 20px;
@@ -514,7 +513,7 @@ footer p {
     .banner-image .banner-bg {
         height: 400px; 
         width: 100%;
-        object-fit: cover; /* Ensures image doesn't stretch weirdly */
+        object-fit: cover;
     }
     
     .secondary-images {
